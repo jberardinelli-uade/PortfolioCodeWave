@@ -56,8 +56,7 @@ body {
     height: 100vh; */
     margin: 0;
     padding: 0;
-    height: 100vh;
-    position: relative; 
+    height: auto;
 }
 header {
     display: flex;
@@ -75,7 +74,7 @@ main {
 }
 main section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 3fr 4fr;
     grid-gap: 80px;
 }
 .img-profile-container {
@@ -117,7 +116,7 @@ main section {
 .list-container li {
     padding: 15px;
     font-family: "Inter", sans-serif;
-    max-width: 400px;
+    max-width: 500px;
     font-weight: 400;
     color: #161616;
 }
@@ -169,6 +168,11 @@ section {
     .img-profile-container img {
         width: 300px;
     }
+    body {
+        height: auto;
+    
+    }
+
 }
 @media screen and (max-width: 480px) {
     main section {
