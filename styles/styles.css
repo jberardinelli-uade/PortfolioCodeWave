@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+span {
+    font-weight: 600;
+    font-family: "Inter", sans-serif;
+    color: #0F948B;
+}
+h1 {
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #0F948B;
+    font-size: 20px;
+}
+h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    color: #0F948B;
+    font-size: 25px;
+}
+p {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+    color: #161616;
+}
+.background-snippet {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: #F0EBE7;
+    background-image: radial-gradient(50% 100% at 0% 50%, rgba(15, 148, 139,0.63) 0, rgba(15, 148, 139,0) 50%, rgba(15, 148, 139,0) 100%);
+}
+body {
+    /* display: flex;
+    flex-direction: column;
+    height: 100vh; */
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    position: relative; 
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F948B;
+    color: white;
+    height: 90px;
+}
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
+}
+.img-profile-container {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-profile-container img {
+    width: 500px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px #aefffaa2;
+}
+.img-profile-container::after {
+    content: "Visita mi portfolio web,\A julianberardinelli.com/"; 
+    white-space: pre; 
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(15, 148, 139, 0.764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease; 
+    color: white; 
+    font-size: 1.2rem; 
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.img-profile-container:hover::after {
+    opacity: 1; 
+}
+.list-container li {
+    padding: 15px;
+    font-family: "Inter", sans-serif;
+    max-width: 400px;
+    font-weight: 400;
+    color: #161616;
+}
+.list-container li a{
+    color: #0F948B;
+    font-weight: 600;
+    border-bottom: 2px solid #0F948B;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.list-container li a:hover {
+    color: rgb(144, 0, 255);
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F948B;
+    color:white;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+footer img {
+    width: 100px;
+    margin: 0 10px;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+section {
+    animation: fade-in 1.5s ease-out; /* Duración de la animación: 1 segundo */
+}
+
+@media screen and (max-width: 768px) {
+    main section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        gap: 20px;
+    }
+    .img-profile-container img {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 480px) {
+    main section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2;
+        gap: 20px;
+    }
+    .img-profile-container img {
+        width: 300px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+}
+@media screen and (max-width: 375px){
+    h1 {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 320px){
+    h1 {
+        font-size: 18px;
+    }
+    .img-profile-container img {
+        width: 250px;
+    }
+}
